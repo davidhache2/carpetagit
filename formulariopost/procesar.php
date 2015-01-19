@@ -36,7 +36,9 @@
 		$infor='no deseas recibir informacion';
 	}
 	
-	echo "Hola $usuario, naciste el $fecha, eres $sexo, $mensaje y $infor.";?>
+	echo "Hola $usuario, naciste el $fecha, eres $sexo, $mensaje y $infor.";
+	
+?>
 			
 			</div>
 	</body>
