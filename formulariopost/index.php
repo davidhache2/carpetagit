@@ -26,7 +26,7 @@
 				<br/>
 				<br/>
 				Indique sus estudios:<br/>
-				<input type="radio" name="estudios" value="noestudios">No tiene estudios</input>
+				<input type="radio" name="estudios" value="noestudios" checked="checked">No tiene estudios</input>
 				<input type="radio" name="estudios" value="primarios">Primarios</input>
 				<input type="radio" name="estudios" value="secundarios">Secundarios</input>
 				<br/>
@@ -34,9 +34,10 @@
 				<input type="checkbox" name="info" checked="checked">Quiero recibir información periódicamente</input>
 				<br/>
 				<br/>
-				<input type="checkbox" name="condiciones">Acepto las condiciones del servicio</input>
-				
-				
+				<input type="checkbox" name="condiciones" required="required">Acepto las condiciones del servicio</input>
+				<br/>
+				<br/>
+				<input type="submit" value="Enviar">
 		</div>
 	</body>
 </html>
