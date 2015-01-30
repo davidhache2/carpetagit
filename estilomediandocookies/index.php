@@ -1,12 +1,14 @@
-<?php 
-if (isset($_POST['escogestilo'])) {
-	setcookie('estilo' , $_POST['escogestilo'] , time()+(3600));
+<?php
+	$estilo='cerulean';
+	if (isset($_COOKIE['estilo'])){
+		$estilo=$_COOKIE['estilo'];
 	}
-	else {
-		echo '';
+	
+	if (isset($_POST['escogestilo'])){
+		setcookie('estilo', $_POST['escogestilo'], time()+(60*60*24*90));
+		$estilo=$_POST['escogestilo'];
 	}
 ?>
-
 <!DOCTYPE html>
 <html  lang="es">
 	<head>
@@ -14,14 +16,8 @@ if (isset($_POST['escogestilo'])) {
 		<title>Enviar datos por url</title>
 		<meta charset="utf-8" >
 		<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
-		<?php 
-		if (isset($_POST['escogestilo'])) {
-		echo '<link href="//maxcdn.bootstrapcdn.com/bootswatch/3.3.1/'.$_COOKIE['estilo'].'/bootstrap.min.css" rel="stylesheet">';
-		}
-		else {
-			echo '';
-		}
-		?>
+		
+		<link href="//maxcdn.bootstrapcdn.com/bootswatch/3.3.1/<?php echo $estilo;?>/bootstrap.min.css" rel="stylesheet">
 	</head>
 	<body>
 		<div class="container">
@@ -33,17 +29,6 @@ if (isset($_POST['escogestilo'])) {
 					<option value="united">United</option>
 				</select>
 				<input type="submit" value="Aplicar">
-				<?php 
-					if (isset($_POST['escogestilo'])) {
-					$estilo=$_POST['escogestilo'];
-					
-					}
-					else {
-						echo '';
-					}
-				
-				?>
-
 			</form>
 
       <!-- Jumbotron -->

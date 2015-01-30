@@ -6,8 +6,7 @@ include ('header.php');
 	<div class="col-md-12">
 		<h2>Carrito de compra</h2>
 		<div class="well">
-		<p></p>
-		</div>
+		<p>
 		
 		<form name="acceso" method="post" action="<?php echo $_SERVER['PHP_SELF'] ?>">
 			<fieldset>
@@ -24,9 +23,14 @@ include ('header.php');
 					<label for='viena'> Viena</label>
 					<input type="checkbox" name="viena">
 				</div>
+			</p>
+		</div>
 				<input class='btn btn-primary' type="submit" value="Seleccionar">
 			</fieldset>
-			<a href="finalizar.php">Finalizar compra</a>
+			<p>
+					
+			</p>
+			<a class="btn btn-success" href="finalizar.php">Finalizar compra</a> o <a class="btn btn-success" href="destruirsesion.php"> Cerrar sesión</a>
 		</form>
 	</div>
 <?php

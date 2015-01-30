@@ -6,4 +6,5 @@ echo '<div class="well">
 <p>sesión destruida</p>
 <a class="btn btn-success"href="index.php">Volver a inicio</a>
 </div>';
+include('footer.php');
 ?>
