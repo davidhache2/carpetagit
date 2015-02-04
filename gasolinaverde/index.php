@@ -36,11 +36,12 @@
 		</header>
 		<!--FIN HEADER-->
 		<!--INICIO MAIN-->
-		<section class="container">
-			<section class="sectionvideo">
+		<section class="container"  id="bloque">
+				<section class="sectionvideo">
 					<h2 class="video">Video promocional</h2>
 					<video src="media/domingoresaka.mp4" controls>Error de reproducción</video>
 				</section>
+				<section id="multimedia">
 			<h2 class="multimedia">Area multimedia</h2>
 			
 			<p>
@@ -60,23 +61,32 @@
 					<li><a href="images/tour8.jpg"><img src="images/thumbnails/tour8.jpg" alt="tour"/></a></li>
 				</ul>
 			</p>
+			</section>
 		</section>
 		<!-- FIN MAIN-->
 		<!-- INICIO SIDEBAR -->
 		<section class="container">
 			<h2>Libro de visitas</h2>
-			<p>Nº de visitas: </p>
 			<form action="index.php" method="POST">
 				<label for="nombre">Nombre o apodo: </label> <br/>
 				<input type="text" name="nombre"/> <br/>
 				<label for="comentario">Comentario: </label><br/>
 				<textarea name="comentario"></textarea> <br/>
+				<input class="enviar" type="submit" value="Publicar">
 			</form>
 		</section>
 		<!--FIN SIDEBAR-->
+		<section class="container">
+			<h2>Comentarios</h2>
+				<div class="datos">
+				<p id="nombre">Pablito</p>
+				<hr/>
+				<p id="comentario">Hola Gasolina Verde soys unos gayses vuestra página apesta y vosotros no os duchais guarros.</p>
+				</div>
+		</section>
 		<!--INICIO FOOTER-->
 		<footer class="container">
-			<p>Página web diseñada por Juan Carlos Martinez Vazquez y David Martín Rodríguez para el grupo &copy;Gasolina verde || 2015 || @Todos los derechos reservados.</p>
+			<p>Página web diseñada por <strong>Juan Carlos Martinez Vazquez</strong> y <strong>David Martín Rodríguez</strong> para el grupo <strong>&copy; Gasolina Verde</strong> || 2015 || @Todos los derechos reservados.</p>
 		</footer>
 		<!--FIN FOOTER-->
 	</body>

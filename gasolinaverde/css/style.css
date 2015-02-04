@@ -10,6 +10,12 @@ body {
 	margin-right:auto;
 	margin-top:1%;
 	margin-bottom:1%;
+	box-shadow: 5px 5px 5px black;
+}
+
+
+input, textarea {
+	box-shadow:2px 2px 2px black;
 }
 
 header {
@@ -38,6 +44,11 @@ h1 {
 	display:inline;
 	color:#1B5427;
 	font-size:295%;
+}
+
+h2 {
+	font-size:175%;
+	color:#1B5427;
 }
 
 .login {
@@ -85,10 +96,16 @@ nav ul li a:active {
 	text-decoration:none;
 	color:red;
 }
-.multimedia {
-	font-size:175%;
-	color:#1B5427;
+
+#bloque {
+	float:left;
+	width:70%;
 }
+
+.galeria {
+	padding:0;
+}
+
 .galeria li {
 	display:inline-block;
 	width:10%;
@@ -104,18 +121,35 @@ nav ul li a:active {
 .sectionvideo {
 	width:50%;
 	float:right;
-	margin-left: 0;
-}
-
-.video {
-	font-size:175%;
-	color:#1B5427;
+	padding:0;
 }
 
 video {
-	width:50%;
+	width:65%;
 }
 
+textarea { 
+	resize: none;
+}
 
+.enviar {
+	margin-top:0.2%;
+	text-align:center;
+}
 
+.datos {
+	border:2px solid #1B5850;
+	padding:1%;
+	border-radius:5px;
+	box-shadow: 5px 5px 5px black;
+}
 
+strong {
+	color:white;
+}
+
+footer {
+	border-top:2px solid #1B5427;
+	margin-top:2%;
+	color:#1B5850;
+}
