@@ -5,32 +5,33 @@
 		<title>Gasolina verde</title>
 		<meta charset="utf-8" >
 		<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
-		<link href="//maxcdn.bootstrapcdn.com/bootswatch/3.3.1/superhero/bootstrap.min.css" rel="stylesheet">
+		<link href="//maxcdn.bootstrapcdn.com/bootswatch/3.3.1/darkly/bootstrap.min.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
-		<header>
-			<div class="container">
-				<img src="images/logo.jpg" alt="logo"/>
-				<h1>Gasolina Verde</h1>
-					<form method="POST" action="index.php">
+		<header class="container">
+			<img class="logo" src="images/logo.jpg" alt="logo"/>
+			<div class="titulo">
+					<h1>Gasolina Verde</h1>
+					
+					<form method="POST" action="index.php" class="login">
+						<label class="salto" for="usuario">Iniciar sesión</label>
 						<input type="text" name="usuario" placeholder="Usuario"/>
 						<input type="password" name="password" placeholder="Contraseña"/>
 						<input type="button" value="Enviar"/>
-						<p><input type="checkbox" name="recordar" value="recordar"/> Recordar contraseña en este equipo.</p>
+						<div class="recordar"><input type="checkbox" name="recordar" value="recordar"/> Recordar contraseña en este equipo.</div>
 					</form>
-					<div class="divimg">
-						<img src="images/cabeceraimg.jpg" alt="Imagen de cabecera"/>
-					</div>
-					<nav>
-						<ul>
-							<li><a href="#">Inicio</a></li>
-							<li><a href="#">Historia</a></li>
-							<li><a href="#">Discografía</a></li>
-							<li><a href="#">Tour</a></li>
-							<li><a href="#">Contacto</a></li>
-						</ul>
-					</nav>		
-			</div>
+				</div>
+					<img class="cabecera" src="images/banner.png" alt="Imagen de cabecera"/>
+				<nav>
+					<ul>
+						<li><a href="#">Inicio</a></li>
+						<li><a href="#">Historia</a></li>
+						<li><a href="#">Discografía</a></li>
+						<li><a href="#">Tour</a></li>
+						<li><a href="#">Contacto</a></li>
+					</ul>
+				</nav>		
 		</header>
 		<!--FIN HEADER-->
 		<!--INICIO MAIN-->
@@ -38,29 +39,29 @@
 			<h2>Area multimedia</h2>
 			<p>
 				<ul>
-					<li><a href="#"><img src="images/tour1.jpg" alt="tour"/></a></li>
-					<li><a href="#"><img src="images/tour2.jpg" alt="tour"/></a></li>
-					<li><a href="#"><img src="images/tour3.jpg" alt="tour"/></a></li>
-					<li><a href="#"><img src="images/tour4.jpg" alt="tour"/></a></li>
+					<li><a href="#"><img src="images/thumbnails/tour1.jpg" alt="tour"/></a></li>
+					<li><a href="#"><img src="images/thumbnails/tour2.jpg" alt="tour"/></a></li>
+					<li><a href="#"><img src="images/thumbnails/tour3.jpg" alt="tour"/></a></li>
+					<li><a href="#"><img src="images/thumbnails/tour4.jpg" alt="tour"/></a></li>
 				</ul>
 			</p>
 				<section>
-					<p class="video">Video promocional</p>
-					<video src="media/video.mp4" controls>Error de reproducción</video>
+					<h2 class="video">Video promocional</h2>
+					<video src="media/domingoresaka.mp4" controls>Error de reproducción</video>
 				</section>
 			<p>
 				<ul>
-					<li><a href="#"><img src="images/tour5.jpg" alt="tour"/></a></li>
-					<li><a href="#"><img src="images/tour6.jpg" alt="tour"/></a></li>
-					<li><a href="#"><img src="images/tour7.jpg" alt="tour"/></a></li>
-					<li><a href="#"><img src="images/tour8.jpg" alt="tour"/></a></li>
+					<li><a href="#"><img src="images/thumbnails/tour5.jpg" alt="tour"/></a></li>
+					<li><a href="#"><img src="images/thumbnails/tour6.jpg" alt="tour"/></a></li>
+					<li><a href="#"><img src="images/thumbnails/tour7.jpg" alt="tour"/></a></li>
+					<li><a href="#"><img src="images/thumbnails/tour8.jpg" alt="tour"/></a></li>
 				</ul>
 			</p>
 		</section>
 		<!-- FIN MAIN-->
 		<!-- INICIO SIDEBAR -->
 		<section class="container">
-			<p>Libro de visitas</p>
+			<h2>Libro de visitas</h2>
 			<p>Nº de visitas: </p>
 			<form action="index.php" method="POST">
 				<label for="nombre">Nombre o apodo: </label> <br/>
@@ -70,37 +71,10 @@
 			</form>
 		</section>
 		<!--FIN SIDEBAR-->
-		
-		
-		
-		
-		
-		
-		
-		
-		
 		<!--INICIO FOOTER-->
 		<footer class="container">
-			<p>Página web diseñada por Juan Carlos Martinez Vazquez y David Martín Rodríguez para el grupo &copy;Gasolina verde || 2015 || Todos los derechos reservados</p>
+			<p>Página web diseñada por Juan Carlos Martinez Vazquez y David Martín Rodríguez para el grupo &copy;Gasolina verde || 2015 || @Todos los derechos reservados.</p>
 		</footer>
 		<!--FIN FOOTER-->
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 	</body>
 </html>

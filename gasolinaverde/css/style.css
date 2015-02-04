@@ -1,0 +1,38 @@
+header {
+	border:1px solid black;
+	margin-top:2%;
+	padding-top:0.73%;
+}
+
+.titulo {
+	display:inline;
+	margin-left:2%;
+}
+
+.logo {
+	float:left;
+}
+
+.salto {
+	display:block;
+}
+
+.recordar {
+	display:block;
+}
+
+h1 {
+	display:inline;
+	color:#1B5427;
+}
+
+.login {
+	display:block;
+	padding-left:12.5%;
+	width:50%;
+	float:right;
+}
+
+.cabecera {
+	margin-top:8%;
+}
