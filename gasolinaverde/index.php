@@ -21,8 +21,9 @@
 						<input type="button" value="Enviar"/>
 						<div class="recordar"><input type="checkbox" name="recordar" value="recordar"/> Recordar contraseña en este equipo.</div>
 					</form>
+					<p class="dinamico">Frase aleatoria de Gasolina Verde</p>
 				</div>
-					<img class="cabecera" src="images/banner.png" alt="Imagen de cabecera"/>
+					
 				<nav>
 					<ul>
 						<li><a href="#">Inicio</a></li>
@@ -36,25 +37,27 @@
 		<!--FIN HEADER-->
 		<!--INICIO MAIN-->
 		<section class="container">
-			<h2>Area multimedia</h2>
-			<p>
-				<ul>
-					<li><a href="#"><img src="images/thumbnails/tour1.jpg" alt="tour"/></a></li>
-					<li><a href="#"><img src="images/thumbnails/tour2.jpg" alt="tour"/></a></li>
-					<li><a href="#"><img src="images/thumbnails/tour3.jpg" alt="tour"/></a></li>
-					<li><a href="#"><img src="images/thumbnails/tour4.jpg" alt="tour"/></a></li>
-				</ul>
-			</p>
-				<section>
+			<section class="sectionvideo">
 					<h2 class="video">Video promocional</h2>
 					<video src="media/domingoresaka.mp4" controls>Error de reproducción</video>
 				</section>
+			<h2 class="multimedia">Area multimedia</h2>
+			
 			<p>
-				<ul>
-					<li><a href="#"><img src="images/thumbnails/tour5.jpg" alt="tour"/></a></li>
-					<li><a href="#"><img src="images/thumbnails/tour6.jpg" alt="tour"/></a></li>
-					<li><a href="#"><img src="images/thumbnails/tour7.jpg" alt="tour"/></a></li>
-					<li><a href="#"><img src="images/thumbnails/tour8.jpg" alt="tour"/></a></li>
+				<ul class="galeria">
+					<li><a href="images/tour1.jpg"><img src="images/thumbnails/tour1.jpg" alt="tour"/></a></li>
+					<li><a href="images/tour2.jpg"><img src="images/thumbnails/tour2.jpg" alt="tour"/></a></li>
+					<li><a href="images/tour3.jpg"><img src="images/thumbnails/tour3.jpg" alt="tour"/></a></li>
+					<li><a href="images/tour4.jpg"><img src="images/thumbnails/tour4.jpg" alt="tour"/></a></li>
+				</ul>
+			</p>
+				
+			<p>
+				<ul class="galeria">
+					<li><a href="images/tour5.jpg"><img src="images/thumbnails/tour5.jpg" alt="tour"/></a></li>
+					<li><a href="images/tour6.jpg"><img src="images/thumbnails/tour6.jpg" alt="tour"/></a></li>
+					<li><a href="images/tour7.jpg"><img src="images/thumbnails/tour7.jpg" alt="tour"/></a></li>
+					<li><a href="images/tour8.jpg"><img src="images/thumbnails/tour8.jpg" alt="tour"/></a></li>
 				</ul>
 			</p>
 		</section>
