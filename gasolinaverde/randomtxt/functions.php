@@ -40,8 +40,13 @@ echo $visitas; // Mostramos las visitas
 }
 
 function escribir() {
-	$comments=fopen('../randomtxt/comentarios.txt',"r");
+	$imprimirarchivo = file('../randomtxt/comentarios.txt') or die ('No se ha podido abrir el archivo');
+		foreach(array_reverse($imprimirarchivo) as $numfila=>$fila){
+			echo "<p>".$fila."</p>";
+		}
 }
+
+
 
 ?>
 
