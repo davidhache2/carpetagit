@@ -88,13 +88,13 @@ class Login
                         $_SESSION['user_login_status'] = 1;
 
                     } else {
-                        $this->errors[] = "Contraseña incorrecta. Vuelve a intentarlo.";
+                        $this->errors[] = "<div class='entrar'> Contraseña incorrecta. Vuelve a intentarlo.</div>";
                     }
                 } else {
-                    $this->errors[] = "Este usuario no existe.";
+                    $this->errors[] = "<div class='entrar'>Este usuario no existe.</div>";
                 }
             } else {
-                $this->errors[] = "Problemas de conexión de base de datos.";
+                $this->errors[] = "<div class='entrar'>Problemas de conexión de base de datos.</div>";
             }
         }
     }
