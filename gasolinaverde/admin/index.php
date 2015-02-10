@@ -10,12 +10,11 @@
 <body class="container">
 	<?php include ('../randomtxt/functions.php');?>
 	<section>
-	<a href="../index.php?logout"><button class="btn btn-default cerrar">Cerrar sesión</button></a>
-	
+		<button class="btn btn-default cerrar">Cerrar sesión</button>
 		<h2>Panel de control</h2>
 		<form action="index.php" method="POST">
 		<label for="texto1">Contenido anterior</label><br>
-		<div class="resize"><?php escribir(); ?></div>
+		<div class="resize"><?php escribir()?></div>
 		<label for="texto2">Nuevo contenido</label><br>
 		<textarea class="resize" name="texto2"></textarea><br>
 		<input type="submit" value="Guardar cambios" class="enviar">

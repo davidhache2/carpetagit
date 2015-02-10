@@ -26,11 +26,6 @@ margin-left:2%;
 .logo{
 float:left;
 }
-
-.registro {
-	float:right;
-}
-
 .salto{
 display:block;
 }
@@ -48,15 +43,10 @@ color:#1b5427;
 }
 .login{
 display:block;
+width:48%;
 float:right;
 padding-left:12.5%;
 }
-
-.login input {
-margin-top:0.5%;
-margin-bottom:0.5%;
-}
-
 .dinamico{
 color:aqua;
 margin-top:3%;
@@ -162,6 +152,7 @@ border:2px solid #1b5850;
 padding:2%;
 border-radius:5px;
 box-shadow:5px 5px 5px black;
+height:200px;
 width:100%;
 overflow:auto;
 
@@ -201,19 +192,3 @@ span {
 	color:white;
 	font-style:italic;
 }
-
-/*Media query menos de 450px*/
-@media screen and (max-width: 450px) {
-	body {
-		width:100%;
-	}
-	.logo {
-		display:none;
-		visibility:hidden;
-	}
-	
-
-}
-
-
-
